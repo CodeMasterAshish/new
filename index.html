@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Landing Page</h1>
+        <p>Your journey starts here</p>
+        <a href="#features" class="btn">Learn More</a>
+    </header>
+    
+    <section id="features">
+        <h2>Our Features</h2>
+        <div class="feature">
+            <h3>Feature 1</h3>
+            <p>Details about this feature.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature 2</h3>
+            <p>Details about this feature.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature 3</h3>
+            <p>Details about this feature.</p>
+        </div>
+    </section>
+    
+    <script>
+        document.querySelector('.btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('#features').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
